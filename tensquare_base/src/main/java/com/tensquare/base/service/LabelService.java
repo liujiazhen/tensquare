@@ -80,12 +80,6 @@ public class LabelService {
         //封装分页对象
         Pageable pageable = PageRequest.of(page - 1, size);
         return labelDao.findAll(new Specification<Label>() {
-            /**
-             * @param root 根对象，也就是要把条件封装到哪个对象中。where 类名=label.getid
-             * @param query 封装的都是查询关键字，比如group by order by 等
-             * @param cb 用来封装条件对象的,如果直接返回null，表示不需要任何条件
-             * @return
-             */
             @Override
             public Predicate toPredicate(Root<Label> root, CriteriaQuery<?> query, CriteriaBuilder cb) {
                 //new一个list集合。来存放所有的条件
