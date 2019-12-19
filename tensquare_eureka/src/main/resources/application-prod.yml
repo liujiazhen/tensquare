@@ -1,0 +1,7 @@
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://101.37.28.73:${server.port}/eureka/
+
