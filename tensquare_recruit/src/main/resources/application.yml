@@ -1,0 +1,13 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: tensquare-recruit #指定服务名
+  datasource:
+    driverClassName: [driverName]
+    url: [url]
+    username: root
+    password: root
+  jpa:
+    database: MySQL
+    show-sql: true
